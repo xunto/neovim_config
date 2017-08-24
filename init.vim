@@ -63,10 +63,18 @@ function! ConfigurePlugins()
 
     " Requires "neovim" installed using pip
     Plugin 'davidhalter/jedi-vim'
-    let g:pymode_rope = 0
+    " let g:pymode_rope = 0
+    let g:jedi#completions_enabled = 0
 
+    " Dependecny
+    Plugin 'Shougo/deoplete.nvim'
+
+    " Async autocomplete
+    Plugin 'zchee/deoplete-jedi'
     call vundle#end()
     filetype plugin indent on
+
+    call deoplete#enable()
 endfunction
 
 call ConfigureDefaults()
