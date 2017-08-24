@@ -59,7 +59,7 @@ function! ConfigurePlugins()
     call vundle#begin()
     Plugin 'VundleVim/Vundle.vim'
 
-    Plugin 'python-mode/python-mode'
+    " Plugin 'python-mode/python-mode'
 
     " Requires "neovim" installed using pip
     Plugin 'davidhalter/jedi-vim'
