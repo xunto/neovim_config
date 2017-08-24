@@ -22,7 +22,7 @@ function! ConfigureDisplay()
     set showmatch
 
     " Highlight line where cursor is
-    " set cursorline
+    set cursorline
     " highlight CursorLine guibg=lightblue ctermbg=darkgray
     " highlight CursorLine term=none cterm=none
 
@@ -66,9 +66,9 @@ function! ConfigurePlugins()
     " Plugin 'python-mode/python-mode'
 
     " Requires "neovim" installed using pip
-    Plugin 'davidhalter/jedi-vim'
+    " Plugin 'davidhalter/jedi-vim'
     " let g:pymode_rope = 0
-    let g:jedi#completions_enabled = 0
+    " let g:jedi#completions_enabled = 0
 
     " Async autocomplete
     Plugin 'Shougo/deoplete.nvim'
@@ -76,6 +76,10 @@ function! ConfigurePlugins()
 
     " Async linter
     Plugin 'w0rp/ale'
+
+    " UI plugin
+    Plugin 'vim-airline/vim-airline'
+    Plugin 'vim-airline/vim-airline-themese'
 
     call vundle#end()
     filetype plugin indent on
