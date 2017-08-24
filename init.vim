@@ -63,6 +63,7 @@ function! ConfigurePlugins()
 
     " Requires "neovim" installed using pip
     Plugin 'davidhalter/jedi-vim'
+    let g:pymode_rope = 0
 
     call vundle#end()
     filetype plugin indent on
