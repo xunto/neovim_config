@@ -70,11 +70,13 @@ function! ConfigurePlugins()
     " let g:pymode_rope = 0
     let g:jedi#completions_enabled = 0
 
-    " Dependecny
-    Plugin 'Shougo/deoplete.nvim'
-
     " Async autocomplete
+    Plugin 'Shougo/deoplete.nvim'
     Plugin 'zchee/deoplete-jedi'
+
+    " Async linter
+    Plugin 'w0rp/ale'
+
     call vundle#end()
     filetype plugin indent on
 
