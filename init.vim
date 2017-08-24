@@ -29,6 +29,10 @@ function! ConfigureDisplay()
     " colorscheme
     " https://github.com/gkjgh/cobalt
     colorscheme cobalt
+
+    " Should speed up scrolling
+    set lazyredraw
+    set ttyfast
 endfunction
 
 function! ConfigureControls()
