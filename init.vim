@@ -31,8 +31,8 @@ function! ConfigureDisplay()
     colorscheme cobalt
 
     " Should speed up scrolling
-    set lazyredraw
-    set ttyfast
+    " set lazyredraw
+    " set ttyfast
 endfunction
 
 function! ConfigureControls()
@@ -79,7 +79,7 @@ function! ConfigurePlugins()
 
     " UI plugin
     Plugin 'vim-airline/vim-airline'
-    Plugin 'vim-airline/vim-airline-themese'
+    Plugin 'vim-airline/vim-airline-themes'
 
     call vundle#end()
     filetype plugin indent on
