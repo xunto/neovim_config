@@ -80,7 +80,10 @@ function! ConfigurePlugins()
     " UI plugin
     Plugin 'vim-airline/vim-airline'
     Plugin 'vim-airline/vim-airline-themes'
-
+    
+    " Solidity syntax highlighting
+    Plugin 'tomlion/vim-solidity'
+    
     call vundle#end()
     filetype plugin indent on
 
