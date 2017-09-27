@@ -76,6 +76,9 @@ function! ConfigurePlugins()
 
     " Async linter
     Plugin 'w0rp/ale'
+    let g:ale_linters = {
+    \    'python': ['pycodestyle', 'mypy']
+    \}
 
     " UI plugin
     Plugin 'vim-airline/vim-airline'
